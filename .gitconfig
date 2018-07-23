@@ -1,0 +1,14 @@
+[user]
+	name = Valentin Fries
+	email = MrKloan@users.noreply.github.com
+[help]
+	autocorrect = 1
+[alias]
+	pr = pull --rebase
+    fp = fetch -p
+	pf = push -f
+	mff = merge --ff-only
+	gud = reset --hard
+	graph = log --graph --oneline
+	ca = commit --amend
+	ri = rebase -i
