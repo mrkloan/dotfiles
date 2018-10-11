@@ -9,6 +9,10 @@
 	pf = push -f
 	mff = merge --ff-only
 	gud = reset --hard
-	graph = log --graph --oneline
+	graph = log --graph --oneline --decorate
 	ca = commit --amend
 	ri = rebase -i
+	co = checkout
+	st = status
+	rl = reflog
+	dump = cat-file -p
