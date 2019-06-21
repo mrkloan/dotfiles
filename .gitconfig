@@ -16,4 +16,4 @@
 	st = status
 	rl = reflog
 	dump = cat-file -p
-	bp = ! git branch | grep -v "develop" | xargs git branch -D
+	bp = ! git branch | grep -Ev "(master|develop|dev)" | xargs git branch -D
