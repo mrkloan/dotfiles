@@ -4,10 +4,8 @@
 [help]
 	autocorrect = 1
 [alias]
-	pr = pull --rebase
-	fp = fetch -p
-	pf = push -f
-	mff = merge --ff-only
+	pf = push --force-with-lease
+	psk = push -o ci.skip
 	gud = reset --hard
 	graph = log --graph --oneline --decorate
 	ca = commit --amend
@@ -17,3 +15,11 @@
 	rl = reflog
 	dump = cat-file -p
 	bp = ! git branch | grep -Ev \"master|develop|dev\" | xargs git branch -D
+[core]
+	autocrlf = input
+[fetch]
+	prune = true
+[remote "origin"]
+	prune = true
+[pull]
+	rebase = true
