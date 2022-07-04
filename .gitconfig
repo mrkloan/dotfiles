@@ -17,6 +17,7 @@
 	bp = ! git branch | grep -Ev \"master|develop|dev\" | xargs git branch -D
 [core]
 	autocrlf = input
+	fsmonitor = true
 [fetch]
 	prune = true
 [remote "origin"]
